@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cloudflare.com">
+
+     
+<body>
+
+    <nav class="navbar">
+    <div class="logo">AGU<span>PAUL</span></div>
+    
+    <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills & Certification</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="menu-toggle" id="mobile-menu">
+        <span></span><span></span><span></span>
+    </div>
+</nav>
+
+    <main class="content-wrapper">
+    <div class="glass-card">
+        <h2>Core Skills</h2>
+        <div style="display: flex; gap: 40px; flex-wrap: wrap;">
+            <div>
+                <h4 style="color: var(--primary)">Network Security</h4>
+                <ul><li>Firewalls & VPN</li><li>BGP & OSPF</li><li>IDS/IPS</li></ul>
+            </div>
+            <div>
+                <h4 style="color: var(--primary)">Web Development</h4>
+                <ul><li>HTML5/CSS3/JS</li><li>PHP</li><li>Performance Tuning</li></ul>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+<main class="content-wrapper">
+    <div class="glass-card">
+        <h2>Certifications</h2>
+
+        
+        
+        <!-- Clickable Certificate Card -->
+        <div class="cert-card" onclick="openModal()">
+            <div class="cert-info">
+                <h3 style="color: var(--primary);">NSQ Level 3 in Frontend Web Development</h3>
+                <p>Computer Professionals (Registration Council of Nigeria)</p>
+                <p style="font-size: 0.8rem; color: var(--text-dim);">Issued: March 5, 2026 | ID: CPN/NSQ/24174903</p>
+                <button class="cv-button" style="padding: 5px 15px; font-size: 0.8rem;">View Full Certificate</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal (Hidden by default) -->
+    <div id="certModal" class="modal">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <div class="modal-content glass-card">
+            <h2>Certificate Details</h2>
+            <p><strong>Award:</strong> Level 3 Full Award</p>
+            <p><strong>Training Institution:</strong> Complete Computers & Technology Limited</p>
+            
+            <hr style="border: 0.5px solid #333; margin: 20px 0;">
+            
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; font-size: 0.9rem;">
+               <div><img src="certificate.PNG" alt=""></div> <div><img src="cetificate2.PNG" alt=""></div>
+               
+            </div>
+        </div>
+    </div>
+</main>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
