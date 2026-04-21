@@ -83,6 +83,8 @@ body, html {
     }
 }
 /* Professional Content Containers */
+@media (max-width: 100%){
+
 .content-wrapper { padding: 120px 10% 60px; min-height: 80vh; }
 h1, h2 { color: var(--primary); text-transform: uppercase; }
 .glass-card {
@@ -90,7 +92,11 @@ h1, h2 { color: var(--primary); text-transform: uppercase; }
     backdrop-filter: blur(10px);
     padding: 40px; border-radius: 15px; border: 1px solid rgba(255,255,255,0.1);
     line-height: 30px;
+
 }
+
+}
+ss
 /* Modal Background */
 .modal {
     display: none; /* Hidden by default */
