@@ -92,6 +92,7 @@ h1, h2 { color: var(--primary); text-transform: uppercase; }
     backdrop-filter: blur(10px);
     padding: 40px; border-radius: 15px; border: 1px solid rgba(255,255,255,0.1);
     line-height: 30px;
+   
     
 }
 
@@ -102,7 +103,7 @@ h1, h2 { color: var(--primary); text-transform: uppercase; }
     backdrop-filter: blur(10px);
     padding: 40px; border-radius: 15px; border: 1px solid rgba(255,255,255,0.1);
     line-height: 30px;
-    width: 600px;
+    width: 500px;
 }
 
 /* Mobile view (Tablets and Phones) */
@@ -114,7 +115,12 @@ h1, h2 { color: var(--primary); text-transform: uppercase; }
 }
 
 
+a{
+    color:white;
+    text-decoration: none;
+}
 
+a:hover{ color:#00a8ff}
 
 /* Modal Background */
 .modal {
