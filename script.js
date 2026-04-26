@@ -45,11 +45,7 @@ window.onclick = function(event) {
 }
 
 
-const imageElement = document.getElementById('rotating-img');
-const images = [
-    'pauls pic.PNG', 
-    'pauls2 pic.PNG'
-];
+
 
 let currentIndex = 0;
 
