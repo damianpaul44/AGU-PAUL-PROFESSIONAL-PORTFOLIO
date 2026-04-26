@@ -45,3 +45,26 @@ window.onclick = function(event) {
 }
 
 
+const imageElement = document.getElementById('rotating-img');
+const images = [
+    'pauls pic.PNG', 
+    'pauls2 pic.PNG'
+];
+
+let currentIndex = 0;
+
+function changeImage() {
+    // 1. Start Fade Out
+    imageElement.classList.add('fade-out');
+
+    // 2. Wait for fade (1s) then change source and fade back in
+    setTimeout(() => {
+        currentIndex = (currentIndex + 1) % images.length;
+        imageElement.src = images[currentIndex];
+        imageElement.classList.remove('fade-out');
+    }, 1000); 
+}
+
+// Run every 5 seconds
+setInterval(changeImage, 5000);
+
